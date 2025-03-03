@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -70,7 +71,7 @@ export function ButtonContainer({
       <div ref={containerRef} className="p-1 flex gap-2 relative">
         {selected >= 0 && selected < props.length && (
           <div
-            className="absolute bg-accent rounded-md transition-all duration-500 ease-in-out"
+            className="absolute bg-accent rounded-md transition-all duration-200"
             style={indicatorStyle}
           />
         )}

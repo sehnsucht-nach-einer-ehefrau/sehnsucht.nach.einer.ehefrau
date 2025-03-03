@@ -16,7 +16,7 @@ export function Title({ props }: { props: string }) {
         <h1 ref={titleRef} className="text-3xl relative overflow-visible">
           {props}
           <div
-            className="absolute bottom-0 left-[-5%] h-[1px] bg-border transition-all duration-1000 ease-in-out"
+            className="absolute -bottom-2 left-[-5%] h-[1px] bg-border transition-all duration-1000 ease-in-out"
             style={{
               width: isVisible ? "110%" : "0%",
               transitionDelay: "300ms",
