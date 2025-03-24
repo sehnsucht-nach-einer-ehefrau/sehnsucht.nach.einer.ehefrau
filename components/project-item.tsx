@@ -1,6 +1,13 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+type StaticImageData = {
+  src: string;
+  height: number;
+  width: number;
+  blurDataURL?: string;
+};
+
 export default function ProjectItem({
   title,
   description,
@@ -9,7 +16,7 @@ export default function ProjectItem({
 }: {
   title: string;
   description: string;
-  imagePath: string;
+  imagePath: string | StaticImageData;
   githubLink?: string;
 }) {
   const router = useRouter();

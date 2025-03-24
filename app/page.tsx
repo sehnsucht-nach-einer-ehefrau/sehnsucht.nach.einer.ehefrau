@@ -51,7 +51,7 @@ export default function Home() {
         container.removeEventListener("scroll", handleScroll);
       }
     };
-  }, []);
+  }, [sections.length]);
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">

@@ -9,12 +9,14 @@ const inProgressProjects = [
     title: "Truman",
     description: "Self Tracking & Statistics Generator",
     imagePath: WorkInProgress,
+    githubLink: "https://github.com/sehnsucht-nach-einer-ehefrau/truman",
   },
   {
     id: 2,
     title: "Senku",
     description: "Personal Book Library for Readers",
     imagePath: WorkInProgress,
+    githubLink: "https://github.com/sehnsucht-nach-einer-ehefrau/senku",
   },
 ];
 

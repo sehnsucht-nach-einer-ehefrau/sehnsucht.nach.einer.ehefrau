@@ -67,9 +67,7 @@ export default function ChatPage() {
                     )}
                   >
                     {message.role === "assistant" ? (
-                      <ReactMarkdown className="prose prose-lg dark:prose-invert text-xl">
-                        {message.content}
-                      </ReactMarkdown>
+                      <ReactMarkdown>{message.content}</ReactMarkdown>
                     ) : (
                       <p className="text-xl">{message.content}</p>
                     )}
@@ -105,7 +103,8 @@ export default function ChatPage() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
-                  handleSubmit(e as string);
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  handleSubmit(e as any);
                 }
               }}
             />
