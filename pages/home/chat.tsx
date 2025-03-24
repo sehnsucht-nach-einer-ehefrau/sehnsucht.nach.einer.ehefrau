@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import Navbar from "@/components/navbar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,6 +10,7 @@ import { useChat } from "ai/react";
 import ReactMarkdown from "react-markdown";
 
 export default function ChatPage() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { messages, input, handleInputChange, handleSubmit, isLoading, error } =
     useChat();
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -33,10 +33,10 @@ export default function ChatPage() {
                     <Bot className="h-12 w-12 text-primary" />
                   </div>
                   <h2 className="text-2xl font-bold text-3xl">
-                    Hello. I'm Sehnsucht (the AI).
+                    Hello. I&apos;m Sehnsucht (the AI).
                   </h2>
                   <p className="text-muted-foreground text-lg">
-                    Ask me anything about me. I'll (hopefully) respond
+                    Ask me anything about me. I&apos;ll (hopefully) respond
                     accurately.
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function ChatPage() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
-                  handleSubmit(e as any);
+                  handleSubmit(e as string);
                 }
               }}
             />

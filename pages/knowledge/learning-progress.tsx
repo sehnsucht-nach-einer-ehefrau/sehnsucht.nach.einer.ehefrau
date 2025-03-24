@@ -252,7 +252,7 @@ export default function LearningProgress({
               onClick={() => handleItemClick(item.index)}
             >
               {isOriginalSelectedIndex(item.index) && (
-                <ChevronRight className="mr-2 h-5 w-5 mb-1" />
+                <ChevronRight className="mr-2 h-4 w-4 mb-1" />
               )}
               {item.text}
             </div>

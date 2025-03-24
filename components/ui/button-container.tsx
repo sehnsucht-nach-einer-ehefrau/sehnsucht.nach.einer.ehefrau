@@ -32,7 +32,6 @@ export function ButtonContainer({
     if (currentButton && container) {
       // Calculate the actual button width/position relative to its container
       const buttonRect = currentButton.getBoundingClientRect();
-      const containerRect = container.getBoundingClientRect();
 
       setIndicatorStyle({
         width: `${buttonRect.width}px`,

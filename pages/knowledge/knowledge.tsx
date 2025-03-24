@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import MasteredSkills from "@/pages/knowledge/mastered-knowledge";
 import LearningProgress from "@/pages/knowledge/learning-progress";
 import FutureSkills from "@/pages/knowledge/future-knowledge";

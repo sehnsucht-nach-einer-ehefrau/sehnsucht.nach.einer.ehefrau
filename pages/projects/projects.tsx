@@ -10,6 +10,12 @@ const inProgressProjects = [
     description: "Self Tracking & Statistics Generator",
     imagePath: WorkInProgress,
   },
+  {
+    id: 2,
+    title: "Senku",
+    description: "Personal Book Library for Readers",
+    imagePath: WorkInProgress,
+  },
 ];
 
 const completedProjects = [
