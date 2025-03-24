@@ -29,7 +29,7 @@ export default function ContactPage() {
           <Textarea
             id="body"
             placeholder="Write your message here..."
-            className="min-h-[150px]"
+            className="min-h-[150px] resize-none"
             required
           />
         </div>

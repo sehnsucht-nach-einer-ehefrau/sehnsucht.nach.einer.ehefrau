@@ -55,7 +55,7 @@ export default function ChatPage() {
                       <AvatarFallback className="bg-primary/10 text-primary text-lg">
                         AI
                       </AvatarFallback>
-                      <AvatarImage src="/bot-avatar.png" alt="AI Assistant" />
+                      <AvatarImage src="/bot-avatar.jpg" alt="AI Assistant" />
                     </Avatar>
                   )}
                   <div
@@ -77,7 +77,7 @@ export default function ChatPage() {
                   {message.role === "user" && (
                     <Avatar className="h-8 w-8 border">
                       <AvatarFallback className="bg-primary/10 text-lg">
-                        <User className="h-4 w-4" />
+                        U
                       </AvatarFallback>
                       <AvatarImage src="/user-avatar.png" alt="User" />
                     </Avatar>
