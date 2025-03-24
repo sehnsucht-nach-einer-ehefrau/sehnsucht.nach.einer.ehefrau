@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowUp, Bot, User } from "lucide-react";
+import { ArrowUp, Bot } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useChat } from "ai/react";
 import ReactMarkdown from "react-markdown";
