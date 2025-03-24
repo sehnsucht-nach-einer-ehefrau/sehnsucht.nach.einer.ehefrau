@@ -17,7 +17,7 @@ export function ButtonContainer({
   const [selected, setSelected] = useState(selectedIndex);
   const [indicatorStyle, setIndicatorStyle] = useState<React.CSSProperties>({});
   const buttonsRef = useRef<(HTMLButtonElement | null)[]>([]);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   // Update selected index if prop changes
   useEffect(() => {
@@ -83,7 +83,9 @@ export function ButtonContainer({
               selected === index ? "text-primary" : "text-muted-foreground"
             }`}
             onClick={() => handleClick(index)}
-            ref={(el) => (buttonsRef.current[index] = el)}
+            ref={(el) => {
+              buttonsRef.current[index] = el;
+            }}
           >
             {prop}
           </Button>
